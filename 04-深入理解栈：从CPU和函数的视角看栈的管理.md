@@ -1,4 +1,5 @@
 # 04 | 深入理解栈：从CPU和函数的视角看栈的管理
+<audio src='./04-深入理解栈：从CPU和函数的视角看栈的管理.mp3' controls></audio>
 你好，我是海纳。
 
 上节课，我们讲到，栈被操作系统安排在进程的高地址处，它是向下增长的。但这只是对栈相关知识的“浅尝辄止”。那我们今天这节课，就会跟着前面的脉络，让你可以更深刻地理解栈的运行原理。
@@ -140,7 +141,9 @@ int fac(int n) {
 
 ```
 # gcc -o fac fac.c
+<audio src='./04-深入理解栈：从CPU和函数的视角看栈的管理.mp3' controls></audio>
 # objdump -d fac
+<audio src='./04-深入理解栈：从CPU和函数的视角看栈的管理.mp3' controls></audio>
 
 ```
 
@@ -189,6 +192,7 @@ int fac(int n) {
 
 ```
 # gcc -O1 -o fac fac.c
+<audio src='./04-深入理解栈：从CPU和函数的视角看栈的管理.mp3' controls></audio>
 
 ```
 

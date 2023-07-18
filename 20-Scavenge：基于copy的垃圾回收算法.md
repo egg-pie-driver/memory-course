@@ -1,4 +1,5 @@
 # 20 | Scavenge：基于copy的垃圾回收算法
+<audio src='./20-Scavenge：基于copy的垃圾回收算法.mp3' controls></audio>
 你好，我是海纳。
 
 上一节课中，我们讲到GC算法大致可以分为两大类：引用计数法和基于可达性分析的算法。在基于可达性分析的GC算法中，最基础、最重要的一类算法是基于copy的GC算法（后面简称copy算法）。

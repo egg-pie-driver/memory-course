@@ -1,4 +1,5 @@
 # 14 | CPU Cache：访存速度是如何大幅提升的？
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 你好，我是海纳。
 
 经过上一节课的学习，我们了解到不同的物理器件，它们的访问速度是不一样的：速度快的往往代价高、容量小；代价低且容量大的，速度通常比较慢。为了充分发挥各种器件的优点，计算机存储数据的物理器件不会只选择一种，而是以CPU为核心，由内而外地组建了一整套的存储体系结构。它将各种不同的器件组合成一个体系，让各种器件扬长避短，从而形成一种快速、大容量、低成本的内存系统。
@@ -117,6 +118,7 @@ LRU的原理很简单，比如程序要顺序访问 B1 、B2、B3、B4、B5这�
 
 ```
 # getconf -a |grep CACHE
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 LEVEL1_ICACHE_SIZE                 32768
 LEVEL1_ICACHE_ASSOC                8
 LEVEL1_ICACHE_LINESIZE             64
@@ -167,7 +169,9 @@ int main( )
 
 ```
 # gcc cache.c
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 # time ./a.out
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 8
 real 0m2.670s
 user 0m2.671s
@@ -179,7 +183,9 @@ sys 0m0.001s
 
 ```
 # gcc cache.c
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 # time ./a.out
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 8
 real 0m16.693s
 user 0m16.700s
@@ -222,7 +228,9 @@ int main( )
 
 ```
 # gcc -O0 cache.c
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 # time ./a.out
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 8
 real 0m1.245s
 user 0m0.797s
@@ -245,7 +253,9 @@ for(int j = 0; j < N; j++) {
 
 ```
 # gcc -O0 cache.c
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 # time ./a.out
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 8
 real 0m2.527s
 user 0m1.980s
@@ -308,7 +318,9 @@ int main(int argc, char *argv[]) {
 
 ```
 # gcc -Wall false_sharing.c -lpthread
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 # time ./a.out
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 a = 100000000, b = 100000000
 
 real 0m0.790s
@@ -339,7 +351,9 @@ struct S{
 
 ```
 # gcc -Wall false_sharing.c -lpthread
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 # time ./a.out
+<audio src='./14-CPUCache：访存速度是如何大幅提升的？.mp3' controls></audio>
 a = 100000000, b = 100000000
 
 real 0m0.347s

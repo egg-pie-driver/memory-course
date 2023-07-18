@@ -1,4 +1,5 @@
 # 24 | GC实例：Python和Go的内存管理机制是怎样的？
+<audio src='./24-GC实例：Python和Go的内存管理机制是怎样的？.mp3' controls></audio>
 你好，我是海纳。
 
 我们前面几节课主要是以Java为例，介绍了JVM中垃圾回收算法的演进过程。实际上，除了JVM之外，用于运行JavaScript的V8虚拟机、Lua虚拟机、Python虚拟机和Go的虚拟机都采用了自动内存管理技术。这节课，我们就一起来分析一下它们的实现。

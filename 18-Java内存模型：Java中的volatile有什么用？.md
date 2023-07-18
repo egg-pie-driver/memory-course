@@ -1,4 +1,5 @@
 # 18 | Java内存模型：Java中的volatile有什么用？
+<audio src='./18-Java内存模型：Java中的volatile有什么用？.mp3' controls></audio>
 你好，我是海纳。
 
 随着这节课的开始，我们将进入到专栏的最后一个模块： **自动内存管理篇**。在这个模块，你将会了解到，以Java为代表的托管型语言是如何自动进行内存管理和回收整理的，这将提高你使用Java、Python、 Go等托管型语言的能力。
